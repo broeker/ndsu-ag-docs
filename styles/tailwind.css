@@ -126,6 +126,6 @@
   }
 
   a.button {
-    @apply bg-green-500 text-gray-50 px-6 py-2
+    @apply bg-green-500 text-gray-50 px-6 py-2 no-underline !important
   }
 }
