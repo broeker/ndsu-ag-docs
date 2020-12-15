@@ -1,5 +1,4 @@
 ---
-layout: layouts/home.njk
 title: Project overview 
 date: 2020-11-25
 permalink: /
