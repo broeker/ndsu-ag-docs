@@ -1,132 +1,157 @@
 ---
-title: Getting started
-date: 2020-11-20
+layout: layouts/home.njk
+title: Project overview 
+date: 2020-11-25
 permalink: /
-toc: true
 eleventyNavigation:
   key: Home
-  title: Getting started
   order: 0
 ---
+The following sections outline our understanding of current project scope, informed by all of the documentation and information generated to date. These documents include the original RFP, questions and responses, Electric Citizen's original proposal, meeting notes, and all files provided by NDSU.
 
-Create your own spacebook exactly like this one and customize it to your needs. Spacebooks are speedy to set up, free, and 100% open source.
+There are still numerous unknowns and questions to be answered and this project overview can be used to both inform those answers and to develop a final technical architecture. The purpose of this living website is to clarify key technical requirements, and to ultimately create an official build plan.
 
-- **Easy to use** 😀 -- add a new page and it appears magically in your navigation
-- **Writing focused** ❤️ -- beautiful typography and a minimalist design managed with easy-to-use Markdown
-- **Speedy and accessible** 🚀 -- static files, responsive system fonts, minimal JavaScript, purge and minify All the Things, accessible to all people and devices
-- **Privacy first** 🔒 -- User-agent: \* Disallow: / is set by default with noreferrer set on all links; encrypt your full site with a password if desired
-- **Flexible** 💪 -- disable features you don't need, add advanced features with serverless functions or Alpine.js
+All the pages in this site are interspersed with "answer" buttons that will open up a Google Form allowing you to provide answers to our specific questions. Please be as expansive in your responses as possible; we can set up a Zoom to discuss finer points as needed. _Note: you should be able to go back and edit or add to your responses as needed_.
 
-Spacebooks are modern notebooks you can use to create documentation, sketch out new ideas, or whatever suits your fancy.
+## Primary goals and requirements
 
----
+Electric Citizen will develop a single Drupal 9 website that will bring the content from numerous areas throughout *NDSU Ag/Ext* under a single umbrella. The homepage of the website will consist of a yet-to-be-determined set of content, and from the top level navigation of this website, a user will be able to navigate to one of these main areas and its subpages: 
 
-## Launch a new spacebook
+![Diagram](/static/img/ndsu.png)
 
-You can launch your own spacebook and deploy it to the cloud on Netlify with the click of a button. You'll need an existing [Github account](https://github.com/) and a [Netlify account](https://www.netlify.com/) (which you can create during this process if you wish): 
+* All sections of the main site will share a common theme
+* All sections will share a common set of content types and functionality (with limitations and restrictions as needed) 
 
-<div class="flex width-full  justify-center">
-<a class="bg-green-700 hover:bg-blue-600 text-white no-underline px-4 py-2 rounded" href="https://app.netlify.com/start/deploy?repository=https://github.com/broeker/spacebook">Deploy to Netlify!</a>
-</div>
+### 1. NDSU Ag and Ext homepage
 
-This process will automatically copy the spacebook repository to your own personal Github account. Once complete, your new spacebook will be automatically deployed on Netlify and ready for customization. 👍
+We have not discussed the homepage in any detail so we should start this discussion soon.  
 
----
+**Questions:**
 
-## What is a spacebook? 
+* Is the above diagram accurate, as a high-level overview of how content will be organized on the new site?
+* Have you given any thought as to how the homepage will be organized?
+* What content or types of content should it contain? What calls to action? 
+* Will the homepage need any special features or controls different than a standard landing page?
+* Is VP of Agricultural Affairs simply a link out to another part of NDSU site?
 
-A spacebook is a simple website generator that will help you create your own project just like this one using a bunch of super cool, modern, and fast technology:
+<a class="button bg-green-500 hover:bg-blue-500 rounded" href="https://docs.google.com/forms/d/1N26zqAp2S3jSr1kweZHWXhEeTUDFh0PeP0M6GUjO2Fo/edit?usp=sharing" target="_blank">Answer NDSU Ag homepage questions 🤔</a>  
 
-- [Eleventy](https://www.11ty.io) a super fast Node-based static site generator that stays out of your way and lets you ship only what you want to ship 🚀
-- [Tailwind 2.0](https://tailwindcss.com/) a brilliant and tiny utility-first CSS framework 🎨
-- [Alpine.js](https://github.com/alpinejs/alpine) a minimal utility-first framework for simple or advanced JavaScript 🕹️
-- [Elasticlunr](http://elasticlunr.com/) a lightweight full-text search engine 🔍
-- [Advanced Markdown-it support](https://github.com/markdown-it/markdown-it) with footnotes, custom containers, emoji support, tables, task lists, and auto-linked images ✏️
-- [Netlify](https://www.netlify.com/) for cloud hosting and one-click installs, easy form support, and an automated [Github](https://github.com/) deployment pipepline 🤖
-- [Netlify CMS](https://www.netlify.com/) (optional) to provide an easy Markdown editor for creating and changing content with optional [Cloudinary support](https://cloudinary.com/) for advanced image management. 💻
+☝️ This will open a response form in a new tab. You can edit/change your responses if needed.
 
-Don't worry; you don't need to know or understand any of this to launch a spacebook but it results in a speedy, easy-to-use, and accessible website that typically scores 100s across the board on Google Lighthouse metrics for mobile and desktop:
- 
-
-![Performance](/static/img/spacebook.png)
-
-::: callout
-**Did you know?** If you enable the optional Netlify CMS or add an analytics script, you may lose 1-3 performance points but this is a pretty swell starting point. 👍
+::: callout 
+**NDSU responses:** 
+* Yes, the diagram is accurate.
+* Some. We anticipate it will be primarily focused on directing people to CAFSNR, Ag Hub, and NDSU Extension.
+* As stated above, it should be primarily a landing page to direct people to main content areas of the site. The main calls to actions will be to navigate to one of those areas and to subscribe to the “For the Land and Its People” newsletter.
+* The homepage will not need special features or layouts different from a landing page
+* The VP page should reside within the NDSU Agriculture top level. Selected content from www.ndsu.edu/vpag could move under an “About” section of www.ndsu.edu/agriculture.
 :::
 
-If you wish, you may customize your spacebook or use it as the basis for your creating your own starter. It was built on the [shoulders of giants](/credits).
 
----
+### 2. College of Agriculture, Food Systems, and Natural Resources (CAFSNR)
 
-## Who needs a spacebook?
+All of the content for CAFSNR (including general info, all academic programs/units, schools, colleges, etc) will be moved into the new site. This content is quite broad and deep:
 
-A spacebook is for anybody who believes in the [#indieweb](https://indieweb.org/) and wants a simple, modern, and free way to put a notebook-like thing on the web that they own and control:
+https://www.ag.ndsu.edu/academics
 
-- Writers and thinkers
-- Planners and dreamers
-- Technical doc writers
-- Project managers
-- Teachers and students
+All of the departments and schools are currently on two disparate systems, with different navigation and content. 
 
-Anybody who is willing to learn a few simple things can create as many spacebooks as they'd like for any reason in the world.
+* https://www.ndsu.edu/agecon/ (e.g. Typo 3)
+* https://www.ag.ndsu.edu/plantpath/ (e.g. Ag CMS)
 
----
+Moving forward, all of these sites will be moved under the CAFSNR umbrella of the new Ag/Ext site, with consistent navigation and content types for all units/schools (About, Future Students, Current Students, Faculty & Staff, Alumni, Research, News/newsletters, Alerts).
 
-## Install spacebook
+All content and design decisions in this section should be geared toward student recruitment.
 
-In theory, you can launch a spacebook without ever downloading the code or running your site locally. Just click that big green button and edit your files directly on Github! (The Github UI is fairly mobile friendly, and it is entirely possible to launch and manage a spacebook entirely via your phone :))  
+#### Questions:
 
-But if you want to customize your codebase or write your Markdown files in a local editor, you'll want to download and install your site locally.
+* Does each school/dept have their own content team? 
+* Plus a main content team for CAFSNR?
+* You mention consistent menus for each school -- does this mean no custom pages/menu items for each school? Or should they be able to add additional pages as needed?
+* How should we handle long names (e.g. College of Agriculture, Food Systems, and Natural Resources) in the top-level menu?
 
-### Requirements
+<a class="button bg-green-500 hover:bg-blue-500 rounded" href="https://docs.google.com/forms/d/e/1FAIpQLSctQWd81uo58r3nXdCm9zk2USnY5Uw0__v587qQlJNt2pUS2w/viewform?usp=sf_link" target="_blank">Answer CAFSNR questions 🤔</a> 
 
-You must be running **Node version 12 or higher** due to the Tailwind 2.0 release. I recommend using NVM to easily manage your Node versions if you need to switch back and forth between older versions.
+::: callout
+**NDSU responses**
+* Content teams: Yes, although some departments have more developed teams than others. NDSU Ag Communication staff will need to work closely with departments throughout the migration process.
+* *Consistent menus: Yes, that team includes the director of college advancement and Ag Communication staff.*
+* *Menu control: We are hoping to have consistent core navigation on school/department pages, but schools/departments will be able to add pages/menu items*
+* Long name: I think, in menus, College of Agriculture, Food Systems, and Natural Resources can be shortened to “Academics,” but we need to discuss with our web team and CAFSNR content team.
+:::
 
-- [Node](https://nodejs.org/)
-- [NVM](https://github.com/nvm-sh/nvm) (optional)
+### 3. Ag Hub
 
-**To find your current node version:**
+As noted by NDSU: 
 
-```
-node --version
-```
+> The goal of the Ag Hub is to provide a one-stop source for information about various Ag topics (e.g. wheat production, federal ag programs, variety trials, farm/ranch stress) rather than content stored based on organizational structure (departmental, REC).
 
-### Step one
+> The Ag Hub is a new top-level section of the website that will be used to organize content that is currently spread across numerous different websites including Extension, AES, and CAFSNR. Paulsen is currently developing the list of content and an architecture for this content, and have produced an initial wireframe. 
 
-If already have a Github repository from a Netlify install, simply clone a copy of your new repository:
+* [Content architecture](https://docs.google.com/spreadsheets/d/13ONJKXYxq10thkYPBgB92lCRoIgG1FVTbxRyoc6xThk/edit?usp=sharing)
+* [Wireframe](https://www.figma.com/proto/HmJmEmT8DQyGhk6Do370rn/NDSU-Wireframe?node-id=9%3A51&viewport=176%2C-201%2C1&scaling=min-zoom)
 
-```
-git clone https://github.com/<your-username>/<your-repository>
-```
+**Questions:** 
 
-If you just want to try this out locally, you can clone the Spacebook repository directly:
+::: callout 
+*This is one of the most unclear portions of the project for our team.* Our understanding is that it will contain a mixture of new content, along with content pulled from both Extension and perhaps CAFSNR. Defining the Ag Hub needs to happen soon and will inform large parts of the architecture.
+:::
 
-```
-git clone https://github.com/broeker/spacebook
-```
+* From our conversations and the wireframe presented, it appears this was originally intended to be a stand-alone site, but is now being folded into this umbrella site. Is this correct? 
+* From a technical level, this appears to mostly be a topic-based directory that includes search in order to present a variety of content (and content types) in a one-stop section of the website. Is that correct?
+* Given that this is no longer a stand-alone site (assuming our assumption is correct), **we believe there may be a better approach to the Ag Hub that is structured more like a searchable directory of resources (perhaps with faceted search), instead of a "minisite" within a site**. Are you open to discussing this approach?
+* In the architecture linked above, there is a lot of content listed for Ag Hub that is actually part of Extension, or another area of this site. 
+* We need to best determine how Ag Hub will function to pull in that content, vs creating it two places.
+* In your site outline, you have both County Centers and Research Centers under Ag Hub, but we are envisioning them under Extension, with CONTENT from those centers pulled into the Ag Hub as appropriate.
+* Your sitemap also indicates other content, such as all of the topics shown in the wireframe (REC/AES). Is your current thinking around Ag Hub much simpler than we are envisioning?
 
-_Note: You'll need to remove the existing .git file and add your own upstream repository if you want to use this as a basis for moving forward. You can also simply copy or [fork the repository](https://github.com/broeker/spacebook) directly from Github._
+<a class="button bg-green-500 hover:bg-blue-500 rounded" href="https://docs.google.com/forms/d/e/1FAIpQLScR2wn1BZPV3PXiqwxceIJJDfAenxCDQuCbfV93gyWr6LzBhA/viewform?usp=sf_link" target="_blank">Answer Ag Hub questions 🤔</a> 
 
-### Step two
+::: callout
+**NDSU responses**
+* Wireframe/stand-alone site: The wireframe was prepared by Paulsen and is focused only on the architecture within the Ag Hub. So it wasn’t that the Ag Hub was designed as stand-alone, it is more that we were still working through the top-level architecture and Paulsen addressed only the part of the site that was in their scope in the wireframe.
+* AgHub: No. The content referenced in the Ag Hub will reside within the Ag Hub. It will be a main content hub, not a directory linking out to content that resides in other parts of the site. Faceted search will be a major feature of the Ag Hub, allowing users to search within types of content. Content currently hosted on Extension and Ag research sites will be re-organized within and migrated to the Ag Hub. The point of the site is to provide a home for all actionable information that can help ag producers improve their operations.
+* Searchable directory approach: We are willing to discuss it along with Paulsen. Filtered, faceted search is part of the plan for the Ag Hub.
+* County centers/research centers: County offices will be under Extension, but RECs will be under the Ag Hub, because they exclusively serve Ag audiences.. Ag content from those sites will be re-organized and migrated to the appropriate topic under the Ag Hub. This will reduce the amount of content that is a part of the County and REC sites, allowing both entities to focus on encouraging deeper engagement with the people of their county or region.
+* General aghub: The Ag Hub will bring together content that is currently located under Extension, one of the Research Extension Centers (which fall under the Ag Experiment Station organizationally), and CAFSNR. This content will not be pulled into the Ag Hub. It will be re-organized and migrated into the Ag Hub. This will provide a central site for crop and livestock producers to find content that can help them improve their operations. It is simpler in terms of the content will reside within the Ag Hub, rather than be pulled in from various sources.
+:::
 
-Install the site and run an initial build command:
+## 4. NDSU Extension
 
-```
-cd spacebook
+All of the content from NDSU Extension will be moved over to the new site, and made available via top level navigation. The content for extension is also quite broad and deep:
 
-npm install
+https://www.ag.ndsu.edu/extension
 
-npn run build (only necessary the first time!)
-```
+There are subsites for each primary area of extension (e.g. Crops, Farm Economics) that contain:
 
-_If you get errors here, double check your node version!_
+* **Topics** -- these seem to be variety of pages and sub-pages within each area that contain everything from publications and PDFs to subpages and external links. They appear to be organically organized and created (and many are out of date).
+* **Programs** -- multiple programs per landing page, each with its own subpages. Links to external registration. 
+* **Publications** -- a list of linked publications that are pulled from the global publication content type. Clicking a publication takes you directly to the publication section of the site.
+* **Connect** -- a page with bio info, headshots, and basic contact info for each area.
 
-### Step three
 
-Now spin up your local server to see your site!
+Each topic currently has a slider with large images linking out to various places, including YouTube, links to pubs, etc. There are also links to “apps”, quick links, resources, latest tagged news.
 
-```
-npm run start
-```
 
-This command will start a local server and you'll be able to work on your site with hot reloads and some nice Browsersync features. If you install your site locally without connecting it to Netlify, you can easily do so later by moving your code into its own Github repository, and then creating a new Netlify site connected to that repository. 💥
+**Questions:**
+
+* NDSU indicates that this content is being re-organized with a new architecture. When will this work be complete?
+* Are the "topics" pages all self-managed by each group? They are set up differently, and many are out of date.
+Is there a better way to handle "topics"? 
+* For program registrations, these appear to be handled by an external link to an NDSU payment system -- can we assume this to be case moving forward also?
+
+<a class="button bg-green-500 hover:bg-blue-500 rounded" href="https://docs.google.com/forms/d/e/1FAIpQLSePCUUinA-TxTU_6w7K0pINmIOvFxN9p7udggKaPb9i3XGwEQ/viewform?usp=sf_link" target="_blank">Answer Extension questions 🤔</a> 
+
+::: callout
+**NDSU responses:** 
+* Architecture timeline: Gravity Switch is nearing completion of the new architecture. We need to confirm with their team, but it should be done in the next week or two.
+* Topics pages: The content of “topics” pages currently on the NDSU Extension homepage is managed by the content team for each area, but the updates need to be made by Ag Communication staff. The “new” topic pages will not be so reliant on timely information that needs to be manually updated, like the slideshows on the current pages. We have been working on assembling content teams for the topics (they’ve been communicating with Gravity Switch and Paulsen to inform their work) who will work with editors to organize, update, add and delete content on their pages.
+* Registrations: Only online payment runs through NDSU’s Marketplace payment system. We would like a central registration system for collecting registrations, separate from taking payments in Marketplace. Marketplace is not a convenient platform for taking registrations, so many of our staff are using Qualtrics or Google Forms, then sending registrants to Marketplace if online payments are required. We are required to use Marketplace for online payments. Our hope is to have the ability to build simple registration forms for events within our Drupal system. However, we are not that familiar with Drupal. I have seen simple registration/event systems implemented through Wordpress add-ons, but they may not have all the features we need. We are hoping Electric Citizen can help us think through the Drupal options for registration, if any.\
+* Editors/content teams: Each area within Extension has a content team. We are hoping to give at least some of the members of that team the ability to manage menus and add new pages within their area, however we would like to have a permission level for managers who would be able to publish those changes. So a permission level for those who can add pages and manage the menu in an area of the site and a higher permission level for those who will review those additions before publishing them.
+:::
+
+## Assumptions and Agreements
+
+* EC will build a single site Drupal architecture, including all of the content types, views, taxonomies, and all other related Drupal configuration in order to build out the site as described above and elsewhere on this project site
+* NDSU and/or its partners will be responsible for all content migration into this new platform
+
